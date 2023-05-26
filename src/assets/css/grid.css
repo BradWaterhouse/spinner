@@ -1,0 +1,7 @@
+.wrapper {
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 50% 40%;
+}
