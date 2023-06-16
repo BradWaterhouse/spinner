@@ -1,6 +1,7 @@
 import React, {FC, ReactElement, useEffect, useState} from 'react';
 import Spinner from "./Components/Spinner/Spinner";
 import '../src/assets/css/grid.css'
+import '../src/assets/css/dialog.css'
 import {Instructions} from "./Components/Instructions/Instructions";
 import {useAbortController} from "./Hooks/UseAbortController/UseAbortController";
 

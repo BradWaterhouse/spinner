@@ -1,0 +1,43 @@
+dialog {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transition: opacity 0.5s;
+    transform: translate(-50%, -50%);
+    border: none !important;
+    border-radius: 1em;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.6rem;
+    width: 40%;
+    height: 30%;
+    z-index: 9999;
+
+    .title {
+        margin-bottom: 0.4em;
+    }
+
+    .close-button {
+        position: absolute;
+        bottom: 1em;
+        left: 1.4em
+    }
+}
+
+dialog[open] {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.close-button {
+    display: inline-block;
+    padding: 0.45em 1em;
+    background: lightgray;
+    border: 0;
+    border-radius: 2px;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: background variables.$transition;
+    cursor: pointer;
+}
